@@ -1,0 +1,261 @@
+/*--whole html tag--*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: #d2d8de;
+}
+
+/*--header--*/
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	height: 60px;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: #213fa1;
+	border-bottom: 1px solid #3a3b3c;
+}
+
+/*--facebook icon--*/
+nav .left .logo img {
+	height: 34px;
+	cursor: pointer;
+	margin-bottom: -4px;
+	background-color: #d2d8de;
+}
+
+nav .left {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
+	background-color: #d2d8de;
+}
+
+nav .left .search {
+	display: flex;
+	position: relative;
+	height: 33px;
+	left: -3px;
+	margin-left: 10px;
+	padding: 10px;
+	width: 203px;
+	border-radius: 28px;
+	background-color: #d2d8de;
+}
+
+nav .left .search i {
+	font-size: 16px;
+	line-height: 15px;
+	margin-right: 5px;
+	color: #b0b3b8;
+	background-color: #d2d8de;
+}
+nav .left .search input {
+	font-size: 12.5px;
+	outline: none;
+	width: 180px;
+	border: 0;
+	color: #b0b3b8;
+	background-color: #d2d8de;
+}
+
+nav .middle {
+	display: flex;
+	position: relative;
+	right: 56px;
+	background-color: #d2d8de;
+}
+
+nav .middle a {
+	background-color: #d2d8de;
+}
+nav .middle i {
+	font-size: 18px;
+	margin: 0 6px 0 6px;
+	padding: 14px 40px;
+	color: gray;
+	background-color: #d2d8de;
+}
+
+nav .middle a i.active {
+	color: #2e81f4;
+	border-bottom: 3px solid #d2d8de;
+}
+
+nav .middle a i.fa-tv:hover {
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #d2d8de;
+}
+
+nav .middle a i.fa-store:hover {
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #d2d8de;
+}
+
+nav .middle a i.fa-users:hover {
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #d2d8de;
+}
+
+nav .middle a i.fa-gamepad:hover {
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #d2d8de;
+}
+
+nav .right {
+	align-items: center;
+	display: flex;
+	margin-right: 10px;
+	background-color: #d2d8de;
+}
+
+nav .right i {
+	color: #e4e6eb;
+	cursor: pointer;
+	font-size: 18px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 8px;
+	padding-left: 8px;
+	width: 35px;
+	border-radius: 50%;
+	background-color: #d2d8de;
+}
+
+nav .right img {
+	cursor: pointer;
+	object-fit: cover;
+	object-position: center;
+	height: 35px;
+	line-height: 45px;
+	margin-left: 8px;
+	width: 35px;
+	border-radius: 50%;
+}
+
+/*-----------------main body---------------*/
+
+.main {
+	display: flex;
+	margin-top: 40px;
+	background: #18191a;
+}
+
+/*-----------------left half of main---------------*/
+
+.main .left {
+	overflow: hidden;
+	overflow-y: scroll;
+	position: fixed;
+	height: 93vh;
+	padding: 20px 6px 5px 13px;
+	width: 25%;
+	background-color: #18191a;
+}
+
+.main .left::-webkit-scrollbar {
+	background-color: #18191a;
+	width: 7px;
+}
+
+.main .left::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background: #18191a;
+}
+
+.main .left:hover::-webkit-scrollbar-thumb {
+	background: #18191a;
+}
+
+.main .left .img {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	transition: 0.2s;
+}
+
+.main .left .img p {
+	font-size: 12px;
+	font-weight: 600;
+	color: #e4e6eb;
+}
+.main .left .img img {
+	object-fit: cover;
+	object-position: center;
+	height: 28px;
+	margin: 8px 15px 8px 0;
+	width: 28px;
+	border-radius: 50%;
+}
+
+.main .left .img:hover {
+	background-color: #202931;
+}
+
+.main .left hr {
+	height: 3px;
+	margin: 10px 0;
+	width: 100%;
+	border: 0;
+	background-color: #242526;
+}
+
+.main .left h2 {
+	font-size: 13px;
+	font-weight: 600;
+	color: #b0b3b8;
+}
+
+.main .left .edit {
+	float: right;
+	position: relative;
+	color: #2e81f4;
+	bottom: 15px;
+	font-size: 12px;
+	font-weight: 200;
+	opacity: 0;
+}
+
+.main .left h2:hover .edit {
+	opacity: 1;
+}
+
+.main .left .shortcuts {
+	align-items: center;
+	display: flex;
+	transition: 0.2s;
+}
+
+.main .left .shortcuts:hover {
+	cursor: pointer;
+	background-color: #242526;
+}
+
+.main .left .shortcuts img {
+	object-fit: cover;
+	object-position: center;
+	height: 40px;
+	margin: 8px 15px 8px 0;
+	width: 40px;
+	border-radius: 10px;
+}
+
+.main .left .shortcuts p {
+	color: #e4e6eb;
+	font-size: 13px;
+	font-weight: 600;
+}

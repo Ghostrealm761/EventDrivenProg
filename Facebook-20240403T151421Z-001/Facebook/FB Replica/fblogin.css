@@ -1,0 +1,104 @@
+/*--whole html tag--*/
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #e9ebee
+}
+
+/*--ang arrangement nila para ma center ang words--*/
+.textbox{
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+/*--facebook logo--*/
+h1{ 
+    font-family: sans-serif;
+    font-size: 55px;
+    color: #1877f2
+}
+
+/*--facebook text under sa logo--*/
+h2{
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+/*--white box--*/
+.container{
+    width: 400px;
+    height: 350px;
+    margin-top: -194px;
+    margin-right: 160px;
+    float: right;
+    border-radius: 12px;
+    background-color: white;
+    width: 390px;
+    height: 400px;
+    text-align: center;
+}
+
+/*--login textbox--*/
+.form{
+    float: right;
+    background-color: white;
+    margin-top: -12px;
+    padding: 20px;
+   
+}
+
+/*--login textbox input function--*/
+.form input{
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 17px;
+    width: 332px;
+    border-radius: 8px;
+
+}
+
+/*--login button--*/
+button{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    background-color: #1877f2;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    
+
+
+}
+
+/*--forgot password hyperlink--*/
+p{
+    font-family: sans-serif;
+    background-color: white;
+    font-size: 16px;
+    color: #1877f2;
+    margin-top: 10px;
+}
+
+/*--forgot password color correction--*/
+p a{
+    color: #1877f2;
+    background-color: white;
+
+}
+
+/*--New Account button text color--*/
+.gbtn {
+    background-color: white;
+}
+
+/*--New Account background color--*/
+.gbtn button{
+    background-color: #13cf13;
+}
+

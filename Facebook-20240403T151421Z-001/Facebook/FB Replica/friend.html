@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Groups | Facebook </title>
+    <link rel = "icon" href = "logos images\FB-logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+        *{
+    Overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #18191A;
+}
+
+/*--header--*/
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 47px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #242526;
+    border-bottom: 1px solid #3A3B3C;
+}
+
+/*--facebook icon--*/
+nav .left .logo img{
+    height: 34px;
+    cursor: pointer;
+    margin-bottom: -4px;
+    background-color: #242526;
+}
+
+nav .left{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: #242526;
+}
+
+nav .left .search{
+    display: flex;
+    position: relative;
+    height: 33px;
+    left: -3px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 203px;
+    border-radius: 28px;
+    background-color: #3A3B3C;
+}
+
+nav .left .search i{
+    font-size: 16px;
+    line-height: 15px;
+    margin-right: 5px;
+    color: #B0B3B8;
+    background-color: #3A3B3C;
+}
+nav .left .search input{
+    font-size: 12.5px;
+    outline: none;
+    width: 180px;
+    border: 0;
+    color: #B0B3B8;
+    background-color: #3A3B3C;
+}
+
+nav .middle{
+    display: flex;
+    position: relative;
+    right: 56px;
+    background-color: #242526;
+}
+
+nav .middle a{
+    background-color: #242526;
+}
+nav .middle i{
+    font-size: 18px;
+    margin: 0 6px 0 6px;
+    padding: 14px 40px;
+    color: gray;
+    background-color: #242526;
+}
+
+nav .middle a i.active{
+    color: #2e81f4;
+    border-bottom: 3px solid #2e81f4;
+}
+
+nav .middle a i.fa-tv:hover{
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#3A3B3C;
+}
+
+nav .middle a i.fa-store:hover{
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#3A3B3C;
+}
+
+nav .middle a i.fa-users:hover{
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#3A3B3C;
+}
+
+nav .middle a i.fa-gamepad:hover{
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#3A3B3C;
+}
+
+nav .right{
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+    background-color: #242526;
+}
+
+nav .right i{
+    color: #E4E6EB;
+    cursor: pointer;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 8px;
+    padding-left: 8px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #3A3B3C;
+}
+
+nav .right img{
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+    height: 35px;
+    line-height: 45px;
+    margin-left: 8px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #3A3B3C;
+}
+
+nav .right a{
+    background-color: #242526;
+}
+
+/*-----------------main body---------------*/
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .friend {
+            background-color: #444;
+            border: 1px solid #666;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            padding: 15px;
+            width: calc(100% - 20px);
+            text-align: center;
+        }
+
+        .friend img {
+            border-radius: 50%;
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-----------=-------NavBar Basically----------------------->
+    <nav>
+    
+        <!-----------main menu on the upper left section------------>
+    
+            <div class = "left">
+                <div class="logo">
+                    <img src = "logos images\FB-logo.png"
+                     alt = ""/>
+                </div>
+                
+        <!--------------------Search Function----------------------->
+                <div class = "search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type = "text" placeholder = "Search Facebook" />
+                </div>
+            </div>
+    
+        <!--main menu on the upper middle section-->
+            <div class = "middle">
+    
+        <!--home button-->
+                
+                <a href="replica.html"> <i class="fa-solid fa-house active"> </i> </a>
+            
+        <!--video button-->
+    
+               <a href ="fbvid.html"> <i class="fa-solid fa-tv"> </i> </a> 
+    
+        <!--------------------Marketplace Tab----------------------->
+    
+                <a href="marketplace.html"> <i class="fa-solid fa-store"> </i> </a> 
+    
+        <!----------------------Friends Tab-------------------------->
+    
+                <a href="friend.html"> <i class="fa-solid fa-users"> </i> </a>
+    
+        <!-----------------------Gaming Tab------------------------->
+    
+                <a href=""> <i class="fa-solid fa-gamepad"> </i> </a>
+    
+            </div>
+    
+        <!----------main menu on the upper right section------------>
+    
+            <div class = "right">
+                <i class="fa-solid fa-list-ul"> </i>
+                <a href="messenger.html"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <i class="fa-solid fa-bell"> </i>
+        
+        <!---------------------Profile Icon------------------------->
+        <a href="profile.html"> <img src = "logos images\member-1.png"
+                 alt=""/></a>
+    
+            </div>
+    
+        </nav>
+        <!---------------------End Of Navbar------------------------>
+    <header>
+        <h1>Friends Page</h1>
+    </header>
+
+    <section>
+        <div class="friend">
+            <img src="friend1.jpg" alt="Friend 1">
+            <h2>Friend 1</h2>
+            <p>Location: City A</p>
+        </div>
+
+        <div class="friend">
+            <img src="friend2.jpg" alt="Friend 2">
+            <h2>Friend 2</h2>
+            <p>Location: City B</p>
+        </div>
+
+        <div class="friend">
+            <img src="friend3.jpg" alt="Friend 3">
+            <h2>Friend 3</h2>
+            <p>Location: City C</p>
+        </div>
+
+        <div class="friend">
+            <img src="friend4.jpg" alt="Friend 4">
+            <h2>Friend 4</h2>
+            <p>Location: City D</p>
+        </div>
+
+        <div class="friend">
+            <img src="friend5.jpg" alt="Friend 5">
+            <h2>Friend 5</h2>
+            <p>Location: City E</p>
+        </div>
+
+        <div class="friend">
+            <img src="friend6.jpg" alt="Friend 6">
+            <h2>Friend 6</h2>
+            <p>Location: City F</p>
+        </div>
+    </section>
+</body>
+</html>
+
